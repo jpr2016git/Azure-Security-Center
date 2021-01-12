@@ -17,10 +17,10 @@ When a machine is found that doesn't have vulnerability assessment solution depl
 **Explore vulnerability assessment recommendations:**
 
 1.	From Security Center sidebar, click on **Recommendations**.
-2.	Expend **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
+2.	Expand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
 3.	Make sure you have *A vulnerability assessment solution should be enabled on your virtual machines* recommendation. If you don’t have this recommendation on the list, you will probably need 24 hours to have the recommendation with the assessment.
 4.	Open the **A vulnerability assessment solution should be enabled on your virtual machines” recommendation** – this recommendation is a Quick Fix one which allows you to deploy the VM extension on the desired VMs.
-5.	Expend **Remediation steps** – in addition to the Quick Fix remediation option, you can also use the **view recommendation logic** option to expose an automatic remediation script content (ARM template). **Close this window.**
+5.	Expand **Remediation steps** – in addition to the Quick Fix remediation option, you can also use the **view recommendation logic** option to expose an automatic remediation script content (ARM template). **Close this window.**
 6.	From the unhealthy tab, select both *asclab-win* and *aslab-linux* virtual machines. Click **Remediate**.
 7.	On the **Choose a vulnerability assessment solution** select **Recommended: Deploy ASC integrated vulnerability scanner powered by Qualys (included in Azure Defender for servers)**. Click **Proceed**.
 8.	A window opens, review the list of VMs and click **Remediate 2 resource** button.
@@ -42,10 +42,10 @@ When a machine is found that doesn't have vulnerability assessment solution depl
 **View and remediate vulnerability assessment findings:**
 
 1.	From Security Center sidebar, click on **Recommendations**.
-2.	Expend **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
+2.	Expand **Remediate vulnerabilities** security control (which contains all recommendations related to security vulnerabilities).
 3.	Search for **Vulnerabilities in your virtual machines should be remediated**.
 4.	On the Security Checks, you should see a list of vulnerabilities found on the affected resources.
-5.	On the recommendation, expend **Affected resources**. You should see two unhealthy resources (asclab-win and asclab-linux) and not applicable resources.
+5.	On the recommendation, expand **Affected resources**. You should see two unhealthy resources (asclab-win and asclab-linux) and not applicable resources.
 6.	From the **Unhealthy resources**, select **asclab-win** resource. Here you can view all relevant recommendations for that resource.
 7.	From the findings list, click on the highest vulnerability located at the top (ID 91649).
 8.	Notice the vulnerability details on the information pane including the description, impact, severity, remediation steps, etc.
@@ -79,12 +79,12 @@ az acr build --image sample/hello-world:v1 --registry <your container registry n
 5. Wait for a successful execution message to appear. For example: Run ID: cb1 was successful after 23s
 6.	The scan completes typically within few minutes, but it might take up to 15 minutes for the vulnerabilities/security findings to appear on the recommendation.
 7.	From Security Center sidebar, click on **Recommendations**.
-8.	Expend **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)**.
+8.	Expand **Remediate vulnerabilities** security control and select **Vulnerabilities in Azure Container Registry images should be remediated (powered by Qualys)**.
 9.	On the recommendation page, notice the following details at the upper section:
     - Unhealthy registries: *1/1*
     - Severity of recommendation: *High*
     - Total vulnerabilities: *expect to see more than 2 vulnerabilities*
-10.	Expend the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab-xxx).
+10.	Expand the **Affected resources** section and notice the **Unhealthy registries** count which shows **1 container registry** (asclab-xxx).
 11.	On the **Security Checks** section, notice the number of vulnerabilities.
 12.	Click on the first security check to open the right pane.
 Notice the vulnerability description, general information (containing the Svss 3.0 base score, SVEs, etc.), remediation steps/workaround, additional information, and the affected (vulnerable) image. **Close this window.**
